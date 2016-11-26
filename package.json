@@ -1,0 +1,25 @@
+{
+  "name": "wordpress-to-firebase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preschian/wordpress-to-firebase.git"
+  },
+  "author": "Preschian Febryantara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/preschian/wordpress-to-firebase/issues"
+  },
+  "homepage": "https://github.com/preschian/wordpress-to-firebase#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "firebase": "^3.6.1",
+    "moment": "^2.17.0",
+    "wpapi": "^0.11.0"
+  }
+}
