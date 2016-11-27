@@ -20,6 +20,7 @@ const config = {
 firebase.initializeApp(config)
 const database = firebase.database()
 
+let order = 1
 let page = 1
 let totalPages = 0
 
@@ -38,8 +39,12 @@ let totalPages = 0
         date: moment(new Date(value.date)).format('MMMM DD, YYYY'),
         slug: value.slug,
         imageId: value.featured_media,
-        image: ''
+        image: '',
+        order: order
       }
+
+      // increase order value
+      order += 1
 
       // insert each post into firebase
       database.ref(`/${value.id}`).set(renderedPost)
